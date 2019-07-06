@@ -1,4 +1,5 @@
 int = for integer values,
+
 float = for decimal or floating points values
 ```
 x = int(4.7)   # x is now an integer 4
@@ -24,3 +25,36 @@ Logical Use	        Bool	Operation
 not 5 < 3	        True	not - Flips the Bool Value
 
 ```
+Strings
+# strings = string is the bunch of some words, numbers, etc. within double or single quotes.
+```
+ my_string = 'this is a string!'
+ my_string2 = "this is also a string!!!"
+ ```
+ You can also include a \ in your string to be able to include one of these quotes:
+
+ ```
+ this_string = 'Simon\'s skateboard is in the garage.'
+print(this_string)
+```
+
+Simon's skateboard is in the garage.
+
+If we don't use this, notice we get the following error:
+```
+File "<ipython-input-20-e80562c2a290>", line 1
+    this_string = 'Simon's skateboard is in the garage.'
+                         ^
+SyntaxError: invalid syntax
+```
+use of addition symbol
+```print(first_word + second_word)```
+
+To creat space between two words by using space between two quotes.
+```print(first_word + ' ' + second_word)```
+
+Use of multiple sign
+```print(first_word * 5)```
+
+Lenth = len() used for counting the number of character used in a string.
+```print(len(first_word))```

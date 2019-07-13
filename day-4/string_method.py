@@ -23,5 +23,18 @@ maria_string = "Maria loves {} and {}"
 print(maria_string.format("math", "statistics"))
 #Maria loves math and statistics
 
-#.split() method
+#.split() method basic
+new_str = "The cow jumped over the moon."
+new_str.split()
+#['The', 'cow', 'jumped', 'over', 'the', 'moon.']
 
+#the maxsplit argument
+new_str.split(' ', 3)
+#['The', 'cow', 'jumped', 'over the moon.']
+
+#Using '.' or period as a separator
+new_str.split('.')
+#['The cow jumped over the moon', '']
+
+new_str.split(None, 3)
+#['The', 'cow', 'jumped', 'over the moon.']

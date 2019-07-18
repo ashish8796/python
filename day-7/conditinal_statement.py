@@ -17,3 +17,7 @@ elif season == 'winter':
     print('stay indoors!')
 else:
     print('unrecognized season')
+
+#indentation
+#In Python, indents conventionally come in multiples of four spaces. 
+#Be strict about following this convention, because changing the indentation can completely change the meaning of the code.

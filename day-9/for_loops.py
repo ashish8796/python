@@ -35,3 +35,20 @@ start - first integer argument, If unspecified, 'start' defaults to 0.
 stop - second integer argument, more than the last number of the sequence,must be specified.
 step - third integer argumetn, the difference between each number in the sequenc, If unspecified, 'step' defaults to 1.
 '''
+#Creating and Modifying Lists
+# Creating a new list
+cities = ['new york city', 'mountain view', 'chicago', 'los angeles']
+capitalized_cities = []
+
+for city in cities:
+    capitalized_cities.append(city.title())
+print(capitalized_cities)
+#['New York City', 'Mountain View', 'Chicago', 'Los Angeles']
+
+#modifying list  - requires range() function
+cities = ['new york city', 'mountain view', 'chicago', 'los angeles']
+
+for index in range(len(cities)):
+    cities[index] = cities[index].title()
+print(cities)
+#['New York City', 'Mountain View', 'Chicago', 'Los Angeles']

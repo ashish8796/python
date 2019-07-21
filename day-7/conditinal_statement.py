@@ -27,10 +27,9 @@ else:
 #quiz
 phone_balance = 10
 bank_balance = 50
-##First Example - try changing the value of phone_balance
-if phone_balance < 10:
+if phone_balance < 12:
     phone_balance += 10
-    bank_balance -= 10
+    bank_balance  -= 10
 
 print(phone_balance)
 print(bank_balance)
@@ -60,3 +59,17 @@ else:
     ticket_price = adult_ticket
     message = "Somebody who is {} years old will pay ${} to ride the bus.".format(age, ticket_price)
 print(message)
+
+points = 53
+result_all = "Congratulation! You won a {}!"
+if points <= 50: 
+    result = result_all.format('wodden rabbit')
+elif points <= 150:
+    result = "Oh dear, no prize this time."
+elif points <= 180:
+    result = result_all.format('wafer-thin mint')
+elif points <= 200:
+    result = result_all.format('Penguin')
+else:
+    result = "Oh dear, no prize this time."
+print(result)

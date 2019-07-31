@@ -10,3 +10,10 @@ for letter, num in zip(letters, nums):
 some_list = [('a', 1), ('b', 2), ('c', 3)]
 letters, nums = zip(*some_list)
 print(letters, nums)
+
+#Enumerate
+#enumerate is a built in function that returns an iterator of tuples containing indices and values of a list.
+letters = ['a', 'b', 'c', 'd', 'e']
+for i, letter in enumerate(letters):
+    print(i, letter)
+

@@ -1,5 +1,10 @@
 #Zip
 #zip returns an iterator that combines multiple iterables into one sequence of tuples.
+
+list(zip(['a', 'b', 'c'], [1, 2, 3])) 
+#would output [('a', 1), ('b', 2), ('c', 3)].
+
+#You could unpack each tuple in a for loop like this.
 letters = ['a', 'b', 'c']
 nums = [1, 2, 3]
 

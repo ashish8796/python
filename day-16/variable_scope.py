@@ -23,3 +23,16 @@ def some_function():
     print(word)
 
 some_function()
+'''
+the value of a global variable can not be modified inside the function. 
+If you want to modify that variable's value inside this function, 
+it should be passed in as an argument.
+'''
+#A better way to write this would be:
+
+egg_count = 0
+
+def buy_eggs(count):
+    return count + 12  # purchase a dozen eggs
+
+egg_count = buy_eggs(egg_count)

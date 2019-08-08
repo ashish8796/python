@@ -18,3 +18,23 @@ TypeError'''
 #else:- '''Python runs into no exceptions while running the try,
 #it will run the code in this block after running the try block.'''
 #finally:- Before Python leaves this try statement, will run the code in this finally
+
+#Specifying Exceptions
+try:
+    # some code
+except ValueError:
+    # some code
+
+# to address more than one type of exception, use tuple after the except with the exceptions.
+try:
+    # some code
+except (ValueError, KeyboardInterrupt):
+    # some code
+
+#if we want to execute different blocks, can have multiple except blocks.
+try:
+    # some code
+except ValueError:
+    # some code
+except KeyboardInterrupt:
+    # some code

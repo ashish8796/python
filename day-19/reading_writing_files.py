@@ -22,3 +22,21 @@ for i in range(10000):
 with open('my_path/my_file.txt', 'r') as f:
     file_data = f.read()
 
+#Calling the read Method with an Integer
+with open('my_path/my_file.txt ') as file_name:
+    print(file_name.read(number)) #any number to that character file  is  read
+
+#Reading Line by Line
+song = open('my_path/my_file.txt', 'r')
+song.readline() #use python ide to execute this code
+song.close()
+print(song)
+
+#Python will loop over the lines of a file using the syntax for line in file.
+#Use to remove new line character .strip()
+camelot_lines = []
+with open("my_path/my_file.txt") as f:
+    for line in f:
+        camelot_lines.append(line.strip())
+
+print(camelot_lines)

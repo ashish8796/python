@@ -1,16 +1,16 @@
-a = [-33, -10, -25, -58, -29, -9, 14, 38, 44, -50, -62]
-
-def oddest(a):
-    n_lst = []
+class SpecialString:
     
-    for i in a:
-        if i % 2 != 0:
-            n_lst.append(i)
-    print(n_lst)
-    for val in n_lst:
-        if (abs(val)//2)%2 ==0:
-           n_lst.remove(val)
-    print(n_lst)    # else:
-    #     return None
+    def __init__(self, cont):
+        self.cont = cont
 
-print(oddest(a))
+    
+    def __truediv__(self, other):
+        line = "=" * len(other.cont)
+        return "\n".join([self.cont, line, other.cont])
+
+
+
+
+spam = SpecialString("Spam")
+hello = SpecialString("Hello world")
+print(spam / hello)

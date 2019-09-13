@@ -15,5 +15,5 @@ class Rectangle:
         return cls(side_lenght, side_lenght)
 
 
-square = Rectangle.new_square(5)
+square = Rectangle.new_square(5) #Instantiating an instance of a class
 print(square.calculate_area())

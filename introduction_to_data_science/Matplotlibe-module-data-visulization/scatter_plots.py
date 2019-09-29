@@ -9,7 +9,7 @@ plt.xlabel("Day")
 plt.ylabel("Views")
 plt.legend(loc="lower right")
 plt.title("Daily views for Marketing channels")
-plt.grid(True, linewidth=1, color='r', linestyle='-.')
+plt.grid(True, linewidth=1, color='g', linestyle='-.')
 
 
 

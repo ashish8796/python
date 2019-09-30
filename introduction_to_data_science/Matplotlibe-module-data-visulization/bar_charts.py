@@ -13,6 +13,7 @@ plt.ylabel("Views")
 plt.legend(loc="upper left")
 plt.title("Daily views for Marketing channels")
 plt.grid(True, linewidth=1, color='g', linestyle='-.')
+plt.xticks(days)
 
 
 

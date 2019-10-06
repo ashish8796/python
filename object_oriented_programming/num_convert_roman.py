@@ -15,5 +15,5 @@ class Roman:
                 self.num -= check()
         return roman_str
 
-roman = Roman(735)
+roman = Roman(8590)
 print(roman.num_to_roman())

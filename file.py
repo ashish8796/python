@@ -1,16 +1,20 @@
-class SpecialString:
+mountain = [
+          "^^^^^^        ",
+          " ^^^^^^^^     ",
+          "  ^^^^^^^     ",
+          "  ^^^^^       ",
+          "  ^^^^^^^^^^^ ",
+          "  ^^^^^^      ",
+          "  ^^^^        "
+        ]
+
+def peak_height(mountain):
+    for ind, val in enumerate(mountain):
+        if ind==0 or ind== len(mountain)-1:
+            mountain[ind] = val.replace("^", "1")
+        else:
+            mountain[ind] = val.replace('^', "1", 1)
     
-    def __init__(self, cont):
-        self.cont = cont
+    return mountain
 
-    
-    def __truediv__(self, other):
-        line = "=" * len(other.cont)
-        return "\n".join([self.cont, line, other.cont])
-
-
-
-
-spam = SpecialString("Spam")
-hello = SpecialString("Hello world")
-print(spam / hello)
+print(peak_height(mountain))

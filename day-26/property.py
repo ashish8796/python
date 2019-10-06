@@ -15,7 +15,7 @@ class Pizza:
     @pineapple_allowed.setter
     def pineapple_allowed(self, value):
         if value:
-            passwo3r = input("Enter the password: ")
+            password = input("Enter the password: ")
             if password == "Sw0rdf1sh!":
                 self.pineapple_allowed = value
             else:
